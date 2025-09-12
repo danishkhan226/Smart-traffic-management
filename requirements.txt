@@ -1,0 +1,52 @@
+Software Requirements
+
+Python:
+
+Version: 3.13.5 (your current version).
+Installation: Ensure it’s installed (check with python --version).
+Reason: Core language for the project.
+
+
+Virtual Environment:
+
+Tool: venv (built into Python).
+Setup: Already created as traffic_env at C:\Users\danis\Downloads\project\traffic_env.
+Activation: traffic_env\Scripts\activate (Windows).
+Reason: Isolates project dependencies.
+
+
+Dependencies (Python Libraries):
+
+Install via pip within the virtual environment:
+bashpip install ultralytics fastapi uvicorn python-multipart opencv-python numpy
+
+Details:
+
+ultralytics: For YOLOv8 (version 8.2.0+ recommended).
+fastapi: For the API framework.
+uvicorn: ASGI server to run FastAPI.
+python-multipart: Enables file uploads in FastAPI.
+opencv-python: For video/image processing (cv2).
+numpy: For array operations.
+
+
+Optional (for GPU support):
+
+torch and torchvision with CUDA: pip install torch==2.5.0 torchvision==0.20.0 --index-url https://download.pytorch.org/whl/cu118 (adjust CUDA version to your GPU).
+
+
+
+
+Frontend (if used):
+
+File: frontend.py (assumed to use Dash).
+Dependencies: pip install dash.
+Reason: Displays upload interface and results.
+
+
+Model File:
+
+File: yolov8n.pt (pre-trained YOLOv8 nano model, ~6MB).
+Source: Download from Ultralytics releases.
+Location: C:\Users\danis\Downloads\project\yolov8n.pt.
+Reason: Core detection model.
